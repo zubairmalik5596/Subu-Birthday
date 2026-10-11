@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#120710">
+  <meta name="description" content="Wo paighaam jo sirf Suhana ke liye likhe gaye.">
+  <title>Suhana Ke Liye — Zubi Ke Dil Ke Alfaz</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&family=Noto+Nastaliq+Urdu:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Icon sprite (all UI icons are drawn, never emoji) ===== -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-lock" viewBox="0 0 24 24"><path d="M7 10V7a5 5 0 0 1 10 0v3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><rect x="4.5" y="10" width="15" height="10.5" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="15.2" r="1.6" fill="currentColor"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.2S3.6 15 3.6 9.3A4.6 4.6 0 0 1 12 6.6a4.6 4.6 0 0 1 8.4 2.7c0 5.7-8.4 10.9-8.4 10.9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-heart-f" viewBox="0 0 24 24"><path d="M12 20.2S3.6 15 3.6 9.3A4.6 4.6 0 0 1 12 6.6a4.6 4.6 0 0 1 8.4 2.7c0 5.7-8.4 10.9-8.4 10.9Z" fill="currentColor"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v10.5m0 0-4-4m4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 17.5v1.2A1.8 1.8 0 0 0 6.8 20.5h10.4a1.8 1.8 0 0 0 1.8-1.8v-1.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V6.5l9-2v11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6.6" cy="18" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="15.6" cy="15.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M9 18V6.5l9-2v11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6.6" cy="18" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m4 4 16 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-restart" viewBox="0 0 24 24"><path d="M19 12a7 7 0 1 1-2.05-4.95" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M19 4.5V9h-4.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3.5c.7 3.6 1.6 4.5 5.2 5.2-3.6.7-4.5 1.6-5.2 5.2-.7-3.6-1.6-4.5-5.2-5.2 3.6-.7 4.5-1.6 5.2-5.2Z" fill="currentColor"/><path d="M18.5 14.5c.35 1.8.8 2.25 2.6 2.6-1.8.35-2.25.8-2.6 2.6-.35-1.8-.8-2.25-2.6-2.6 1.8-.35 2.25-.8 2.6-2.6Z" fill="currentColor"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3.5 8.5 7 12l5-6 5 6 3.5-3.5-1.6 9.5H5.1L3.5 8.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.4C10.5 5 8.4 4.5 4.5 4.7v13c3.9-.2 6 .3 7.5 1.6 1.5-1.3 3.6-1.8 7.5-1.6v-13c-3.9-.2-6 .3-7.5 1.6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 6.4v13.2" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.6"/><path d="M7 14.5h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-cake" viewBox="0 0 24 24"><path d="M5 20.5h14v-6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M5 16c1.6 1.2 2.7 1.2 4.3 0s2.7-1.2 4.4 0 2.7 1.2 4.3 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 12.5V9m0 0c1 0 1.6-.7 1.6-1.6S12 5.5 12 5.5s-1.6 1-1.6 1.9S11 9 12 9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-wish" viewBox="0 0 24 24"><path d="M12 3.5 13.6 8l4.5 1.6-4.5 1.6L12 15.7l-1.6-4.5L5.9 9.6 10.4 8 12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M18.5 15.5l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2Z" fill="currentColor"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- ===== Ambient layers ===== -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar" id="topbar" hidden>
+    <div class="progress" id="progress" role="progressbar" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0" aria-valuetext="Shuru nahi hua">
+      <span class="progress-label" id="progressLabel">Khush Aamdeed</span>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+    </div>
+    <div class="tools">
+      <button class="icon-btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Halka music chalao" title="Halka music">
+        <svg class="icon"><use href="#i-mute"/></svg>
+      </button>
+      <button class="icon-btn" id="restartBtn" type="button" aria-label="Shuru se" title="Shuru se">
+        <svg class="icon"><use href="#i-restart"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <noscript>
+    <p class="noscript">Ye chhoti si duniya khulne ke liye JavaScript chahiye. Ise on karo aur page refresh karo.</p>
+  </noscript>
+
+  <!-- =========================================================
+       LOGIN — a soft, private door into her world
+       ========================================================= -->
+  <section class="gate" id="gate" aria-labelledby="gateTitle">
+    <div class="gate-glow" aria-hidden="true"></div>
+
+    <div class="gate-card glass">
+      <div class="gate-mascot" id="gateMascot" aria-hidden="true"></div>
+
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ، صرف سہانا کے لیے</p>
+      <h1 id="gateTitle" class="gate-title">Ek Chhoti Si Duniya, Mohabbat Se Bandhi</h1>
+      <p class="gate-sub">Is jagah ki chaabi sirf ek insaan ke paas hai. Apna khaas din likho, aur darwaza khul jayega.</p>
+
+      <form id="gateForm" novalidate autocomplete="off">
+        <div class="date-row">
+          <label class="field">
+            <span>Din</span>
+            <input id="gateDay" name="day" type="text" inputmode="numeric" maxlength="2" placeholder="DD" autocomplete="off" aria-describedby="gateError">
+          </label>
+          <span class="slash" aria-hidden="true">/</span>
+          <label class="field">
+            <span>Mahina</span>
+            <input id="gateMonth" name="month" type="text" inputmode="numeric" maxlength="2" placeholder="MM" autocomplete="off" aria-describedby="gateError">
+          </label>
+        </div>
+        <p class="error" id="gateError" role="alert" aria-live="assertive"></p>
+        <button class="btn primary wide" id="gateBtn" type="submit">
+          <svg class="icon"><use href="#i-lock"/></svg>
+          <span>Meri Duniya Kholo</span>
+        </button>
+      </form>
+
+      <p class="gate-hint">Tip: chaabi wo din hai jab ye duniya thodi narm ho gayi thi.</p>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       THE JOURNEY
+       ========================================================= -->
+  <main id="app" hidden>
+
+    <!-- ---------- LEVEL 1 — A Little Welcome ---------- -->
+    <section class="level" id="lvl1" data-level="1" aria-labelledby="lvl1h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Pehla Level</span>
+        <h2 id="lvl1h" class="sr-only">Ek Chhota Sa Istaqbaal</h2>
+      </div>
+
+      <div class="welcome-stage">
+        <div class="name-reveal" id="nameReveal" aria-live="polite"></div>
+        <div class="mascot-hold" id="welcomeMascot" aria-hidden="true"></div>
+      </div>
+
+      <article class="glass card letter-card" id="welcomeCard">
+        <p class="card-urdu" lang="ur" dir="rtl">خوش آمدید، میری پیاری سہانا</p>
+        <p class="card-body">
+          Kuch jagahain eenton se banti hain, aur ye jagah ehsaas se bani hai. Aage har level mein ek
+          paighaam hai jo dil se likha gaya — koi shor nahi, koi bheed nahi, sirf wo alfaaz jo tumhare
+          liye sambhal kar rakhe gaye the. Yahan apna waqt lo. Koi jaldi nahi hai.
+        </p>
+        <p class="signature">mohabbat ke saath, Zubi</p>
+      </article>
+
+      <button class="btn primary next-btn" type="button" data-next="2">
+        <span>Safar Shuru Karo</span>
+        <svg class="icon"><use href="#i-arrow"/></svg>
+      </button>
+    </section>
+
+    <!-- ---------- LEVEL 2 — Zubi Ke Dil Ke Alfaz ---------- -->
+    <section class="level" id="lvl2" data-level="2" hidden aria-labelledby="lvl2h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Doosra Level</span>
+        <h2 id="lvl2h">Zubi Ke Dil Ke Alfaz</h2>
+        <p class="level-sub">Yahan paanch dil ud rahe hain. Har ek kholo — andar ek chhota sa sach hai jo Zubi ne tumhare liye rakha tha.</p>
+      </div>
+      <div class="playfield" id="playfield" aria-label="Udte hue dil jinme paighaam hain"></div>
+      <ol class="collected" id="collected" aria-label="Khule hue paighaam"></ol>
+      <p class="counter" id="heartCount" aria-live="polite">0 / 5 dil khul gaye</p>
+      <div class="level-end" id="lvl2-end" hidden>
+        <p class="unlock-msg">Har dil jo tumne khola, wo pehle se tumhara tha.</p>
+        <button class="btn primary next-btn" type="button" data-next="3"><span>Aage Barho</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+    </section>
+
+    <!-- ---------- LEVEL 3 — The Memory Book ---------- -->
+    <section class="level" id="lvl3" data-level="3" hidden aria-labelledby="lvl3h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Teesra Level</span>
+        <h2 id="lvl3h">Yaadon Ki Kitaab</h2>
+        <p class="level-sub">Humari chhe yaadein. Ek safha palto, aaram se parho, aur pasand aaye to rakh lo — har safha tasveer bana ke save ho sakta hai.</p>
+      </div>
+      <div class="mem-grid" id="memGrid"></div>
+      <p class="counter" id="memCount" aria-live="polite">0 / 6 safhe palat gaye</p>
+      <div class="level-end" id="lvl3-end" hidden>
+        <p class="unlock-msg">Ye safhe kabhi khatam nahi hote. Ye bas chupke se dobara parhe jane ka intezaar karte hain.</p>
+        <button class="btn primary next-btn" type="button" data-next="4"><span>Aage Barho</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+    </section>
+
+    <!-- ---------- LEVEL 4 — The Pookie Card ---------- -->
+    <section class="level" id="lvl4" data-level="4" hidden aria-labelledby="lvl4h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Chautha Level</span>
+        <h2 id="lvl4h">Pookie Card</h2>
+        <p class="level-sub">Ek card jisme stickers ki jagah hai. Koi chhota sa dost chuno jo is pe baith jaye, phir tayyar card tasveer bana ke rakh lo.</p>
+      </div>
+
+      <div class="card-stage">
+        <article class="greeting-card" id="greetingCard">
+          <span class="gc-corner tl" aria-hidden="true"></span>
+          <span class="gc-corner br" aria-hidden="true"></span>
+          <div class="gc-stickers" id="gcStickers" aria-hidden="true"></div>
+          <p class="gc-urdu" lang="ur" dir="rtl">سہانا، آپ زبیر کی سب سے پیاری ہیں</p>
+          <h3 class="gc-title">Saalgirah Mubarak, Suhana</h3>
+          <p class="gc-body">
+            Saal ke saare dinon mein se ye ek din tumhara hai. Dua hai ke tumhara saal narm rahe,
+            tumhari hansi buland rahe, aur tumhara dil hamesha itna hi narm rahe.
+          </p>
+          <p class="gc-sign">— Zubi</p>
+        </article>
+      </div>
+
+      <div class="sticker-picker" id="stickerPicker" role="group" aria-label="Card ke liye stickers chuno"></div>
+      <p class="counter" id="stickerCount" aria-live="polite">0 / 4 stickers laga diye</p>
+
+      <div class="btn-row">
+        <button class="btn ghost" id="cardDownload" type="button"><svg class="icon"><use href="#i-download"/></svg><span>Card Ko Tasveer Bana Ke Save Karo</span></button>
+        <button class="btn primary next-btn" type="button" data-next="5" id="lvl4next" disabled><span>Aage Barho</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+      <p class="hint" id="lvl4hint">Aage barhne ke liye kam az kam do stickers lagao.</p>
+    </section>
+
+    <!-- ---------- LEVEL 5 — The Message ---------- -->
+    <section class="level" id="lvl5" data-level="5" hidden aria-labelledby="lvl5h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Paanchwa Level</span>
+        <h2 id="lvl5h">Wo Paighaam</h2>
+        <p class="level-sub">Ek paighaam. Apni raftaar se parho. Jab dil ko lag jaye, to ise tasveer bana ke hamesha ke liye rakh lo.</p>
+      </div>
+
+      <article class="paper" id="paper">
+        <div class="typed" id="typed"></div><span class="caret" aria-hidden="true"></span>
+      </article>
+
+      <div class="btn-row">
+        <button class="btn ghost" id="skipLetter" type="button"><span>Poora dikha do</span></button>
+        <button class="btn ghost" id="msgDownload" type="button" disabled><svg class="icon"><use href="#i-download"/></svg><span>Paighaam Ko Tasveer Bana Ke Save Karo</span></button>
+        <button class="btn primary next-btn" type="button" data-next="6" id="lvl5next" hidden><span>Aage Barho</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+    </section>
+
+    <!-- ---------- LEVEL 6 — Ten Lines For You ---------- -->
+    <section class="level" id="lvl6" data-level="6" hidden aria-labelledby="lvl6h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Chhata Level</span>
+        <h2 id="lvl6h">Tumhare Liye Das Lines</h2>
+        <p class="level-sub" id="lvl6intro">Zubi seedhi baat karta hai, das chhoti lines mein.</p>
+      </div>
+
+      <article class="glass card lines-card" id="linesCard">
+        <p class="lines-lead" id="linesLead"></p>
+        <ol class="lines-list" id="linesList"></ol>
+      </article>
+
+      <div class="btn-row">
+        <button class="btn ghost" id="linesReveal" type="button"><span>Mere saath parho</span></button>
+        <button class="btn ghost" id="linesDownload" type="button"><svg class="icon"><use href="#i-download"/></svg><span>Ye Lines Save Karo</span></button>
+        <button class="btn primary next-btn" type="button" data-next="7" id="lvl6next" hidden><span>Aage Barho</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+    </section>
+
+    <!-- ---------- LEVEL 7 — Make a Wish ---------- -->
+    <section class="level" id="lvl7" data-level="7" hidden aria-labelledby="lvl7h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Saatwa Level</span>
+        <h2 id="lvl7h">Ek Khwahish Maango</h2>
+        <p class="level-sub" id="wishPrompt">Ek pal ke liye aankhein band karo. Us khwahish ke bare mein socho jo tum kabhi zubaan pe nahi laati.</p>
+      </div>
+
+      <div class="cake-scene" id="cakeScene" role="img" aria-label="Saalgirah ka cake jispe paanch candles jal rahi hain">
+        <div class="candles">
+          <div class="candle"><i class="flame"></i><i class="wick"></i><b></b><span class="smoke"></span></div>
+          <div class="candle"><i class="flame"></i><i class="wick"></i><b></b><span class="smoke"></span></div>
+          <div class="candle"><i class="flame"></i><i class="wick"></i><b></b><span class="smoke"></span></div>
+          <div class="candle"><i class="flame"></i><i class="wick"></i><b></b><span class="smoke"></span></div>
+          <div class="candle"><i class="flame"></i><i class="wick"></i><b></b><span class="smoke"></span></div>
+        </div>
+        <div class="tier t3"></div>
+        <div class="tier t2"></div>
+        <div class="tier t1"></div>
+        <div class="plate"></div>
+      </div>
+
+      <button class="btn primary" id="wishBtn" type="button"><svg class="icon"><use href="#i-wish"/></svg><span>Candles Bujha Do</span></button>
+      <p class="wish-msg" id="wishMsg" aria-live="polite"></p>
+      <div class="level-end" id="lvl7-end" hidden>
+        <button class="btn primary next-btn" type="button" data-next="8"><span>Aakhri Level Pe Chalo</span><svg class="icon"><use href="#i-arrow"/></svg></button>
+      </div>
+    </section>
+
+    <!-- ---------- LEVEL 8 — The Last Level (Vault door) ---------- -->
+    <section class="level" id="lvl8" data-level="8" hidden aria-labelledby="lvl8h">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <div class="level-head">
+        <span class="badge">Aathwa Level</span>
+        <h2 id="lvl8h">Dil Ka Khazana</h2>
+        <p class="level-sub">Yahan Zubi wo baatein rakhta hai jo zubaan pe laana bahut bhaari hai. Ye darwaza sirf ek insaan ke liye khulta hai.</p>
+      </div>
+
+      <article class="glass card vault-intro">
+        <p class="card-urdu" lang="ur" dir="rtl">دل کا خزانہ، صرف سہانا کے لیے</p>
+        <p class="card-body">
+          Is andhere darwaze ke peeche ek chhota sa khazana hai: chaar sacche jawab, har ek das lines ka,
+          bina kisi banawat ke likhe hue. Sabit karo ke tum hi ho, aur ye kisi aur ke liye nahi khulega.
+        </p>
+        <button class="btn primary" id="openVault" type="button"><svg class="icon"><use href="#i-lock"/></svg><span>Khazane Ke Andar Chalo</span></button>
+      </article>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       THE HEART VAULT — the bank-like finale (dark room)
+       ========================================================= -->
+  <section class="vault" id="vault" hidden aria-label="The Heart Vault">
+    <div class="vault-room">
+      <div class="vault-spot" aria-hidden="true"></div>
+
+      <div class="vault-stack">
+        <!-- the card that drops into place -->
+        <div class="vault-card" id="vaultCard" aria-hidden="true">
+          <span class="vc-chip"></span>
+          <span class="vc-brand">ZUBI'S HEART</span>
+          <span class="vc-name">SUHANA</span>
+          <span class="vc-num">12 • 10 • 2026</span>
+          <span class="vc-heart"><svg class="icon"><use href="#i-heart-f"/></svg></span>
+        </div>
+
+        <div class="vault-machine" id="vaultMachine" aria-hidden="true">
+          <div class="vm-top">
+            <span class="vm-lamp"></span>
+            <span class="vm-title">HEART VAULT</span>
+          </div>
+          <div class="vm-screen">
+            <p class="vm-line" id="vmLine">— card ka intezaar —</p>
+          </div>
+          <div class="vm-slot"><span class="vm-slot-inner"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vault-panel" id="vaultPanel">
+      <p class="urdu top-urdu" lang="ur" dir="rtl">زبیر کے دل کے الفاظ ہیں آپ کے لیے، سہانا</p>
+      <h2 class="vault-h" id="vaultH">Apna Card Daalo</h2>
+      <p class="vault-sub" id="vaultSub">Is machine ka card sirf ek hai. Aage barhne ke liye use slot mein daalo.</p>
+
+      <div class="vault-step" id="vaultStepCard">
+        <button class="btn primary" id="enterCardBtn" type="button"><svg class="icon"><use href="#i-card"/></svg><span>Enter Card</span></button>
+      </div>
+
+      <form class="vault-step" id="vaultForm" hidden novalidate autocomplete="off">
+        <p class="vault-label">Apni access date likho</p>
+        <div class="date-row">
+          <label class="field">
+            <span>Day</span>
+            <input id="vaultDay" type="text" inputmode="numeric" maxlength="2" placeholder="DD" autocomplete="off" aria-describedby="vaultError">
+          </label>
+          <span class="slash" aria-hidden="true">/</span>
+          <label class="field">
+            <span>Month</span>
+            <input id="vaultMonth" type="text" inputmode="numeric" maxlength="2" placeholder="MM" autocomplete="off" aria-describedby="vaultError">
+          </label>
+        </div>
+        <p class="error" id="vaultError" role="alert" aria-live="assertive"></p>
+        <button class="btn primary" id="vaultBtn" type="submit"><svg class="icon"><use href="#i-lock"/></svg><span>Khazana Kholo</span></button>
+      </form>
+
+      <div class="vault-step" id="vaultStepOpen" hidden>
+        <p class="vault-open-msg" id="vaultOpenMsg"></p>
+        <div class="chip-row" id="chipRow" role="group" aria-label="Jo parhna chaho wo chuno"></div>
+      </div>
+    </div>
+
+    <!-- the reading room where each 10-line answer appears -->
+    <div class="vault-reading" id="vaultReading" hidden>
+      <button class="reading-back" id="readingBack" type="button"><svg class="icon"><use href="#i-arrow"/></svg><span>Wapas</span></button>
+      <article class="reading-card" id="readingCard">
+        <p class="reading-urdu" lang="ur" dir="rtl" id="readingUrdu"></p>
+        <h3 class="reading-title" id="readingTitle"></h3>
+        <ol class="reading-list" id="readingList"></ol>
+        <p class="reading-sign">— Zubi</p>
+      </article>
+      <button class="btn ghost" id="readingDownload" type="button"><svg class="icon"><use href="#i-download"/></svg><span>Ise Tasveer Bana Ke Save Karo</span></button>
+    </div>
+
+    <div class="vault-final" id="vaultFinal" hidden>
+      <p class="vault-final-line">Us khazane mein Zubi ka sab kuch yehi hai. Iska har lafz tumhare parhne se pehle hi sach tha.</p>
+      <button class="btn primary" id="replayBtn" type="button"><svg class="icon"><use href="#i-restart"/></svg><span>Phir Se Poora Dekho</span></button>
+    </div>
+  </section>
+
+  <!-- ===== Toast ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
